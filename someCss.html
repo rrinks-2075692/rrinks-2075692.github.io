@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Practice</title>
+    
+    <style>
+        .p1 {font-family: Arial, Helvetica, sans-serif ;}
+        .p2 {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+        img.one {
+            height: auto;
+            width: auto;
+        }
+        img.two {
+            height: 50%;
+            width: 50%;
+        }
+
+        body {
+            color: blueviolet;
+        }
+        h2 {
+            color: cadetblue;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .margin {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+            
+        p.dotted {outline-style: dotted;}
+
+    </style>
+    </head>
+    <body>
+    <h1>Some CSS Practice:</h1>
+
+    <h2>Two different fonts:</h2>
+    <p class="p1">This paragraph will show up in the Arial font. I hope it works.</p>
+    <p class="p2">This paragraph will show up in the Verdana font. This is kinda fun!</p>    
+
+    <h2>Resized picture:</h2>
+    <p>Original Picture:</p>
+        <img class="one" src="https://www.buzzfeed.com/kevinsmith/literally-just-16-adorable-cows-guaranteed-to-melt-your?utm_source=dynamic&utm_campaign=bfsharecopy&sub=0_118794858#118794858" width="300" height="300"><br>    
+    <p>Resized Picture:</p>
+        <img class="two" src="https://www.buzzfeed.com/kevinsmith/literally-just-16-adorable-cows-guaranteed-to-melt-your?utm_source=dynamic&utm_campaign=bfsharecopy&sub=0_118794858#118794858" width="300" height="300">
+
+    <h2>Text Centered Over a Photo</h2>
+    <div class="container">
+        <img src="https://cdn.shopify.com/s/files/1/0128/0882/files/Capture1.JPG?v=1486593790" alt="Snow" style="width:100%;">
+        <div class="centered">Centered</div>
+      </div>
+
+    <h2>Pic With Pixel Margins</h2>
+        <div class="margin">
+            <img src="https://static.parade.com/wp-content/uploads/2018/03/golden-puppy-life-national-geographic-ftr-1.jpg" width="300" height="300">
+        </div>
+
+    <h2>Text With Dotted Line Border</h2>
+    <p class="dotted">Here is an example of a paragraph written with a dotted border.</p>
+    </body>
+</html>
